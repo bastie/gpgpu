@@ -1,8 +1,8 @@
 /*
-See LICENSE folder for this sample’s licensing information.
+Siehe bitte im LICENSE Ordner für die Lizenzinformationen für dieses Beispiel.
 
-Abstract:
-A class to manage all of the Metal objects this app creates.
+Abstrakt:
+Die Deklaration einer Klasse um alle Metal Objekte zu verwalten, die diese Anwendung erzeugt.
 */
 
 #import <Foundation/Foundation.h>

@@ -112,7 +112,7 @@ Du solltest solche aufwendigen Arbeiten in Performancekritischen Quelltext verme
 Das erste was der Initialisierer macht ist die Funktion zu laden un für die Ausführung auf der GPU vorzubereiten.
 Wenn du deine Anwendung baust, compiliert XCode die `add_arrays` Funktion und fügt diese zu der Standard-Metal-Bibliothek `default.metallib` hinzu, welche in eine Anwendung integriert wird.
 Du verwendetes `MTLLibrary` und `MTLFunction` Objekte um Informationen über die Metal Bibliothek und deren enthaltene Funktionen zu bekommen.
-Um ein Objekt zu erhalten, welches die `add_arrays`-Funktion representiert, erzeugst du zunächst über [`MTLDevice`][MTLDevice] ein [`MTLLibrary`][MTLLibrary]-Objekt für die Standard-Metal-Bibliothek und anschließend über diese nach ein  [`MTLFunction`][MTLFunction]-Objekt, welches deine `shader`-Funktion repräsentiert.
+Um ein Objekt zu erhalten, welches die `add_arrays`-Funktion representiert, erzeugst du zunächst über [`MTLDevice`][MTLDevice] ein [`MTLLibrary`][MTLLibrary]-Objekt für die Standard-Metal-Bibliothek und anschließend über diese nach ein [`MTLFunction`][MTLFunction]-Objekt, welches deine `shader`-Funktion repräsentiert.
 
 ``` objective-c
 - (instancetype) initWithDevice: (id<MTLDevice>) device {
@@ -359,8 +359,6 @@ Da die Berechnung lediglich durchgeführt wurde um zu zeigen wie der Prozess der
 ```
 
 ----
-
-siehe auch:
 
 [MTLDevice]: https://developer.apple.com/documentation/metal/mtldevice
 [MTLCreateSystemDefaultDevice]: https://developer.apple.com/documentation/metal/1433401-mtlcreatesystemdefaultdevice
